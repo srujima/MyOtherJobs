@@ -264,7 +264,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .locImage {
     cursor: pointer;
-    background: url("../Images/location.png") right no-repeat;
+    background: url("../images/location.png") right no-repeat;
     background-size: 15px 15px;
     background-position: 95% 50%;
 }
@@ -327,7 +327,6 @@ textarea::-webkit-scrollbar-thumb {
     padding: 3px;
     color: white;
     text-align: center;
-    /* background: url(../Images/chosen-sprite.png) -42px 1px no-repeat; */
     background-color: #00ccff;
     font-size: 10px;
 }
@@ -350,9 +349,6 @@ textarea::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border: 1px solid #929090;
     box-shadow: 0 0 15px rgba(123, 121, 121, 0.1) inset;
-    /*background: url("../Images/search.png") right no-repeat;
-    background-size: 10px 15px;
-    background-position: 95% 50%;*/
     color: grey;
 }
 .chosen-container-multi .chosen-choices:after {
@@ -456,7 +452,7 @@ div.pac-item:hover {
 }
 .pac-icon {
     cursor: pointer;
-    background:  url("../Images/location.png") right no-repeat;;
+    background:  url("../images/location.png") right no-repeat;;
     background-size: 15px 15px;
     height: 15px;
     margin-right: 7px;
@@ -472,16 +468,16 @@ div.pac-item:hover {
     height: auto;
     padding-bottom: 15px;
     background: #00ccff;
-    background-image: url(../Images/puzzle1.png),
-                      url(../Images/puzzle2.png),
-                      url(../Images/puzzle3.png),
-                      url(../Images/puzzle5.png),
-                      url(../Images/puzzle3.png),
-                      url(../Images/puzzle6.png),
-                      url(../Images/puzzle4.png),
-                      url(../Images/puzzle2.png),
-                      url(../Images/puzzle5.png),
-                      url(../Images/puzzle3.png);
+    background-image: url(../images/puzzle1.png),
+                      url(../images/puzzle2.png),
+                      url(../images/puzzle3.png),
+                      url(../images/puzzle5.png),
+                      url(../images/puzzle3.png),
+                      url(../images/puzzle6.png),
+                      url(../images/puzzle4.png),
+                      url(../images/puzzle2.png),
+                      url(../images/puzzle5.png),
+                      url(../images/puzzle3.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 45px;
     background-position: 37% 2%, 2%, 95% 34%,45% 91%, 52% 35%, 70% 10%, 68% 98%, 88% 91%,15% 8%, 20% 84%;   
@@ -516,7 +512,7 @@ div.pac-item:hover {
  .menu > .nav > li > a:focus,
  .menu > .nav > li > a:active {
     color: white;
-    background: url(../Images/line.png) no-repeat center;
+    background: url(../images/line.png) no-repeat center;
     display: inline-block;
     height: 90px;
     background-size: 50px 10px; 
