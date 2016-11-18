@@ -695,7 +695,7 @@ div.pac-item:hover {
 .icon a {
     text-decoration: none;
 }
-.icon p:hover, .icon p:active {
+.icon a:hover, .icon a:active {
     color: yellow;
 }
 .generalBtn {
