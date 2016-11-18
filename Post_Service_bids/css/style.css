@@ -684,7 +684,7 @@ div.pac-item:hover {
     margin-top: 10px;
     font-size: 20px;
 }
-.icon p {
+.icon a {
     font-size: 20px;
     float: right;
     line-height: 4.5em;
