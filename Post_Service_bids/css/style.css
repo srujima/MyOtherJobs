@@ -539,7 +539,7 @@ div.pac-item:hover {
     color: white;
     font-weight: 600;
 }
-.searchQuestion input[type=submit]:active {
+.searchQuestion input[type=submit]:focus, .searchQuestion input[type=submit]:active {
     outline: none !important;
     border: 1px solid transparent;
 }
