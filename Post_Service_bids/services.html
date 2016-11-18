@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+      <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300"
+         rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/chosen.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/mediaqueries.css">     
+   </head>
+   <body>
+      <div class="navbar navbar-default">
+         <div class="container-fluid postBid">
+            <div class="row">
+               <div class="col-sm-4">
+                  <a class="navbar-brand" href="#"><img src="Images/logo1.png"></a>
+               </div>
+               <div class="col-sm-8">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                           <a href="#"><img src="Images/search.png" class="image" width="15px" height="20px"><br/>Search</a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Images/getmore.png" class="image" width="15px" height="20px"> <br
+                              />Get More</a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Images/message.png" class="image" width="20px" height="16px"> <br
+                              />Messages</a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Images/help.png" class="image" width="20px" height="20px"><br/>Help</a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Images/notifications.png" class="image" width="15px" height="20px"><br/>Notifications</a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Images/profile.png" class="image" width="20px" height="20px"><br/>Profile</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>            
+         </div>
+      </div>
+      <nav class="navbar navbar-default" id="menuBar">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuItems">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menuItems">
+               <div class="menuBar">
+                  <ul class="nav navbar-nav">
+                     <li class="Bids"><a href="#">BIDS</a></li>
+                     <li class="Jobs"><a href="#">JOBS</a></li>
+                     <li class="Service"><a href="#">SERVICES</a></li>
+                     <li class="Dashboard"><a href="#">DASHBOARD</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <header>
+         <div class="services container">
+            <span>Services</span>
+            <p>Post your Service BID</p>
+         </div>
+      </header>
+      <div class="container formElements">
+         <form id="upload" action="" method="POST" enctype="multipart/form-data">
+            <div class="row">
+               <div class="col-md-6 content">
+                  <div class="form-group">
+                     <label class="labels">Title</label>
+                     <input type="text" />
+                  </div>
+                  <div class="form-group">
+                     <label class="labels valign">Description</label>
+                     <textarea id="textArea" style="resize:none" /> </textarea>
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Image</label>
+                     <span class="userInputFields" style="display: inline-block;">
+                     <span class="input-group">
+                     <input type="text" class="form-control" id="image"/>
+                     <span class="input-group-addon">
+                     <span class="btn btn-secondary">
+                     <label for="imageUpload" style="text-align:center; font-size: 13px; padding:2px;">Browse</label>
+                     <input type="file" id="imageUpload" accept="" style="display: none" />
+                     </span>
+                     </span>
+                     </span>
+                     <span style="padding: 10px; display: inline-block;vertical-align: middle;">
+                     <button class="btn btn-default" type="button" id="clearBtn">Clear</button>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Minimum Bid</label>
+                     <input type="text" id="bidinput" maxlength="6" onkeyup="this.style.width = ((this.value.length + 1) * 10) + 'px';" />
+                     <label class="labels" id="maxBid">Maximum Bid</label>
+                     <input type="text" id="bidinput" maxlength="6" onkeyup="this.style.width = ((this.value.length + 1) * 10) + 'px';" />
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Quantity - ??</label>
+                     <input type="text" id="" />
+                  </div>
+               </div>
+               <div class="col-md-6 content">
+                  <div class="form-group">
+                     <label class="labels">Project Type:</label>
+                     <span class="userInputFields">
+                     <span class="labels">
+                     <label>Fixed</label>
+                     <input type="checkbox" id="checkBox"/>
+                     </span>
+                     <span class="labels">
+                     <label>Hourly</label>
+                     <input type="checkbox" id="checkBox"/>
+                     </span>
+                     <span class="labels">
+                     <label>Contract</label>
+                     <input type="checkbox" id="checkBox"/>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Fixed Type</label>
+                     <input type="range" name="fixed" id="fixedValue" value="15" min="1" max="100" oninput="fixedOutput.value = fixedValue.value">
+                     <output name="outputValue" id="fixedOutput" class="minmaxvalue">15</output>
+                  </div>
+                  <div class="form-group">
+                     <label class="labels" id="rangeSlider">Hourly Type</label>
+                     <input type="range" name="hourly" id="hourlyValue" value="15" min="1" max="100" oninput="hourlyOutput.value = hourlyValue.value">
+                     <output name="outputValue" id="hourlyOutput" class="minmaxvalue">15</output>
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Duration</label>
+                     <span class="duration">
+                        <select class="duration-dropdown">
+                           <option value="">Select Option</option>
+                           <option value="">3 Months</option>
+                           <option value="">6 Months</option>
+                           <option value="">12 Months</option>
+                        </select>
+                        <i class="fa fa-chevron-circle-down" style="font-size:17px;"></i>
+                     </span>
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Type of service</label>
+                     <span class="type-search">
+                     <input type="text" class="searchImage"/>
+                     <i class="fa fa-search"></i>
+                     </span>
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Location</label>
+                     <input type="text" class="locImage" id="searchLocation" />
+                  </div>
+                  <div class="form-group">
+                     <label class="labels">Languages</label>
+                     <select class="chosen-select" multiple id="langOptions" data-language="en">
+                        <option value=af>Afrikaans</option>
+                        <option value=sq>Albanian</option>
+                        <option value=am>Amharic</option>
+                        <option value=ar>Arabic</option>
+                        <option value=hy>Armenian</option>
+                        <option value=az>Azerbaijani</option>
+                        <option value=eu>Basque</option>
+                        <option value=be>Belarusian</option>
+                        <option value=bn>Bengali</option>
+                        <option value=bs>Bosnian</option>
+                        <option value=bg>Bulgarian</option>
+                        <option value=ca>Catalan</option>
+                        <option value=ceb>Cebuano</option>
+                        <option value=ny>Chichewa</option>
+                        <option value=zh-CN>Chinese</option>
+                        <option value=co>Corsican</option>
+                        <option value=hr>Croatian</option>
+                        <option value=cs>Czech</option>
+                        <option value=da>Danish</option>
+                        <option value=nl>Dutch</option>
+                        <option value=en>English</option>
+                        <option value=eo>Esperanto</option>
+                        <option value=et>Estonian</option>
+                        <option value=tl>Filipino</option>
+                        <option value=fi>Finnish</option>
+                        <option value=fr>French</option>
+                        <option value=fy>Frisian</option>
+                        <option value=gl>Galician</option>
+                        <option value=ka>Georgian</option>
+                        <option value=de>German</option>
+                        <option value=el>Greek</option>
+                        <option value=gu>Gujarati</option>
+                        <option value=ht>Haitian Creole</option>
+                        <option value=ha>Hausa</option>
+                        <option value=haw>Hawaiian</option>
+                        <option value=iw>Hebrew</option>
+                        <option value=hi>Hindi</option>
+                        <option value=hmn>Hmong</option>
+                        <option value=hu>Hungarian</option>
+                        <option value=is>Icelandic</option>
+                        <option value=ig>Igbo</option>
+                        <option value=id>Indonesian</option>
+                        <option value=ga>Irish</option>
+                        <option value=it>Italian</option>
+                        <option value=ja>Japanese</option>
+                        <option value=jw>Javanese</option>
+                        <option value=kn>Kannada</option>
+                        <option value=kk>Kazakh</option>
+                        <option value=km>Khmer</option>
+                        <option value=ko>Korean</option>
+                        <option value=ku>Kurdish (Kurmanji)</option>
+                        <option value=ky>Kyrgyz</option>
+                        <option value=lo>Lao</option>
+                        <option value=la>Latin</option>
+                        <option value=lv>Latvian</option>
+                        <option value=lt>Lithuanian</option>
+                        <option value=lb>Luxembourgish</option>
+                        <option value=mk>Macedonian</option>
+                        <option value=mg>Malagasy</option>
+                        <option value=ms>Malay</option>
+                        <option value=ml>Malayalam</option>
+                        <option value=mt>Maltese</option>
+                        <option value=mi>Maori</option>
+                        <option value=mr>Marathi</option>
+                        <option value=mn>Mongolian</option>
+                        <option value=my>Myanmar (Burmese)</option>
+                        <option value=ne>Nepali</option>
+                        <option value=no>Norwegian</option>
+                        <option value=ps>Pashto</option>
+                        <option value=fa>Persian</option>
+                        <option value=pl>Polish</option>
+                        <option value=pt>Portuguese</option>
+                        <option value=pa>Punjabi</option>
+                        <option value=ro>Romanian</option>
+                        <option value=ru>Russian</option>
+                        <option value=sm>Samoan</option>
+                        <option value=gd>Scots Gaelic</option>
+                        <option value=sr>Serbian</option>
+                        <option value=st>Sesotho</option>
+                        <option value=sn>Shona</option>
+                        <option value=sd>Sindhi</option>
+                        <option value=si>Sinhala</option>
+                        <option value=sk>Slovak</option>
+                        <option value=sl>Slovenian</option>
+                        <option value=so>Somali</option>
+                        <option value=es>Spanish</option>
+                        <option value=su>Sundanese</option>
+                        <option value=sw>Swahili</option>
+                        <option value=sv>Swedish</option>
+                        <option value=tg>Tajik</option>
+                        <option value=ta>Tamil</option>
+                        <option value=te>Telugu</option>
+                        <option value=th>Thai</option>
+                        <option value=tr>Turkish</option>
+                        <option value=uk>Ukrainian</option>
+                        <option value=ur>Urdu</option>
+                        <option value=uz>Uzbek</option>
+                        <option value=vi>Vietnamese</option>
+                        <option value=cy>Welsh</option>
+                        <option value=xh>Xhosa</option>
+                        <option value=yi>Yiddish</option>
+                        <option value=yo>Yoruba</option>
+                        <option value=zu>Zulu</option>
+                     </select>
+                  </div>
+                  <div class="submit">
+                     <button class="btn btn-default" id="postBtn">Post</button>
+                     <a href="#">Preview</a>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/jquery/jquery-3.1.1.js"></script>
+      <script src="js/jquery/chosen.jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtqK1oEtNl8MxOW1SfkNlrcJXpWpNx4c8&libraries=places"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
