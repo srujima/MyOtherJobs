@@ -541,7 +541,7 @@ div.pac-item:hover {
 }
 .searchQuestion input[type=submit]:active {
     outline: none !important;
-    border: 0;
+    border: 1px solid transparent;
 }
  #searchtxt input[type=text] {
     width: 350px;
