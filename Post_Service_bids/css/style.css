@@ -443,6 +443,7 @@ textarea:focus, select:focus,
 }
 input[type='range']:focus {
     border: 0px;
+    outline: none !important;
     box-shadow: none;
 }
 div.pac-item:hover {
