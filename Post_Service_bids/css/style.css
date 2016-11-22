@@ -65,13 +65,11 @@ li:focus,li:hover,li:active {
 .navbar-default {
     background-color: #ffffff;
     border: 0;
-    padding: 20px;
 }
-.navbar-brand {
+/*.navbar-brand {
     padding: 0px;
     height: auto;
-
-}
+}*/
 .navbar-collapse {
     overflow-x: hidden;
     border: 0px;
@@ -82,7 +80,6 @@ li:focus,li:hover,li:active {
 }
 .services {
     color: white;
-    padding-top: 15px;
 }
 .services span {
     font-size: 50px;
@@ -91,10 +88,14 @@ li:focus,li:hover,li:active {
 .navbar-right {
     text-align: center;
     font-size: 17px;
+    margin-top: 10px;
 }
 #myNavbar>ul>li>a {
     display: block;
     padding: 15px 10px;
+}
+#myNavbar p {
+    font-size: 15px;  
 }
 #menuBar {
     background-color: #1b1464;
