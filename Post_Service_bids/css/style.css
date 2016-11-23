@@ -22,6 +22,9 @@ body {
 li:focus,li:hover,li:active {
     background: transparent;
 } 
+ul, li {
+    list-style: none;
+}
 .menuItem:hover::after {
     content: '';
     position: absolute;
@@ -110,6 +113,7 @@ li:focus,li:hover,li:active {
 .navbar, .navbar-collapse.collapse {
     min-height: 34px !important;
     height: auto;
+    margin-bottom: 0;
 }
 
 header {
@@ -670,7 +674,7 @@ div.pac-item:hover {
 .navigation .pull-right:focus {
     outline: 0;
 }
-.img-fluid {
+.supportCenter .img-fluid {
     width: 25%;
     height: auto;
     cursor: pointer;
@@ -788,4 +792,175 @@ div.pac-item:hover {
  .paymentsContainer input[type=button]::-moz-focus-inner {
    border: 0;
    outline: 0 !important;
+}
+/***** DASHBOARD STYLES *****/
+.dashboard ul.dropdown-menu {    
+    margin-top: 10px;
+    right: 4px;
+    left: auto;
+}
+.dashboard ul ul:before {
+    position: absolute;
+    top: -9px;
+    left: 185px;
+    display: inline-block;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #EEE;
+    border-left: 9px solid transparent;
+    content: '';
+}
+.nav-tabs {
+    border:0;
+    border-bottom: 0px;
+}
+.nav-tabs .nav-item .nav-link {
+    color: white;
+}
+.nav-tabs .nav-item a:hover,
+.nav-tabs .nav-item a:active,
+.nav>li>a:focus, 
+.nav>li>a:hover {
+    background: transparent;
+    border: 0;
+    outline: none !important;
+    color: #00ccff;
+} 
+.nav-tabs>.nav-item.active>a, 
+.nav-tabs>.nav-item.active>a:focus, 
+.nav-tabs>.nav-item.active>a:hover {
+    color: #00ccff;
+    cursor: default;
+    background-color: transparent; 
+    border: none;
+    border-bottom-color: transparent;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+     background-color: transparent; 
+     border-color: transparent;
+     border: 0; 
+}
+.tab-content header {    
+    width: 100%;
+    height: auto;     
+}
+.heading {
+    padding: 10px;
+    margin-left: 30px;
+}
+ .heading span {  
+    font-size: 30px;
+    font-weight: bold;
+}
+.menuBar {
+    width: 550px;
+    height: auto;
+}
+#menuBar li.nav-item {
+    color: #f6f3f3;
+    font-weight: bold;
+    padding-right: 30px;
+}
+.invities button {
+    width: 50px;
+    height: 50px;
+    background: #565656;
+    border-radius: 50%;    
+    border: 0;
+    margin: 5px;
+
+}
+.invities .fa {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.socialMedia {
+    border: 1px solid gray;
+    margin: 50px;    
+    width: 35%;
+    margin-left: auto;
+    margin-right: 0;
+    height: auto;
+}
+.start {
+    background: #00ccff;
+    color:white;
+    font-size: 10px;
+    text-align: right;
+}
+.powerbtn {
+    background:none !important;
+    outline:none !important;
+    border:0;
+}
+.start .fa {
+    font-size: 20px; 
+    display: inline-block !important; 
+}
+.fa-plus {
+    width: 30px;
+    height: 30px;
+    background: #00ccff;
+    border-radius: 50%;    
+    border: 0;
+    margin: 5px;
+}
+.invities .pull-right input[type=button],
+.invities .pull-right select,
+.disputes .pull-right input[type=button],
+.disputes .pull-right select {
+    width: 90px;
+    height: 25px;
+    font-size: 13px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: none;
+}
+.table>thead>tr>th {
+     font-size: 20px;
+     border: none;
+}
+.table>tbody>tr>td {
+    font-size: 20px;
+    color: grey;
+}
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    text-align: center;
+    border-top: none;
+}
+.verticalLine {
+    border-right: 2px solid #dedcdc;
+}
+a.dropdown-item, .dropdown-header {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+}
+.mainHeader span {
+    font-size: 20px;
+    color: #191919;
+    font-weight: bold;
+}
+.subHeading h2 {
+    color: #00ccff;
+    font-weight: bold;
+}
+.tableContent {
+    margin-top: 30px;
+}
+.dispute-menubar .nav-tabs .nav-item .nav-link {
+    font-size: 20px;
+    color: #00ccff;
+    margin-right: 30px;
 }

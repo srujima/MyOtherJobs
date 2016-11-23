@@ -24,11 +24,6 @@
     padding: 0;
   }
 
-  .navbar-brand img {
-    width: 200px;
-    height: 70px;
-  }
-
   .services {
     padding-left: 45px;
   }
@@ -184,11 +179,6 @@
   .container {
     width: 768px;
     font-size: 15px;
-  }
-
-  .navbar-brand img {
-    width: 200px;
-    height: 70px;
   }
 
   .services {
@@ -475,12 +465,7 @@
     width: 320px;
     font-size: 11px;
   }
-
-  .navbar-brand img {
-    width: 200px;
-    height: 70px;
-  }
-
+  
   .services {
     padding-left: 45px;
   }
@@ -623,11 +608,6 @@
   .container {
     width: 375px;
     font-size: 12px;
-  }
-
-  .navbar-brand img {
-    width: 200px;
-    height: 70px;
   }
 
   .formElements {
