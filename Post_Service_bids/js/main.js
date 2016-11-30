@@ -1,5 +1,14 @@
-$(document).ready(function() {
-
+(function($) {
+    
+    $(document).ready(function() {
+        
+        //dropdown Sub-menus
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault(); 
+			event.stopPropagation(); 
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
     // Multiple dropdown select
     $(".chosen-select").chosen();
 
@@ -18,7 +27,7 @@ $(document).ready(function() {
         var input = document.getElementById('searchLocation');
         var autocomplete = new google.maps.places.Autocomplete(input);
     }
-    google.maps.event.addDomListener(window, 'load', initialize);  
-
+    google.maps.event.addDomListener(window, 'load', initialize); 
 
 });
+})($);

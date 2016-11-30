@@ -21,9 +21,24 @@ body {
 }
 li:focus,li:hover,li:active {
     background: transparent;
+}
+.marginFifty {
+    margin-top: 50px;
 } 
 ul, li {
     list-style: none;
+}
+a:focus, a:hover, a:active {
+    text-decoration: none;
+}
+button, input[type="button"] {
+    background: transparent;
+    border: none;
+}
+button:hover, input[type="button"]:hover,
+button:active, input[type="button"]:active {
+    outline: none;
+    border: none;
 }
 .menuItem:hover::after {
     content: '';
@@ -133,10 +148,14 @@ header {
     color: #393737;
 }
 .labels {
-    width: 24%;
+    width: 25%;
     font-size: 15px;
     margin-bottom: 5px;
     font-weight: 500;
+}
+.quantity-grp label {
+    width: auto;
+    margin-right: 58px;
 }
 label {
     font-size: 15px;
@@ -153,9 +172,10 @@ label {
 .valign {
     vertical-align: top;
 }
-#bidinput {
+#bidinput, #quantity {
     width: 45px;
     border-radius: 10px;
+    padding: 5px;
 }
 output {
     min-width: 35px;
@@ -213,7 +233,6 @@ input[type='range']::-webkit-slider-thumb {
 input[type=text], select {
     border-radius: 10px;
     display: inline-block;
-    padding: 10px;
     border: 1px solid #929090;
     padding: 10px;
     box-shadow: 0 0 15px rgba(123, 121, 121, 0.1) inset;
@@ -500,7 +519,8 @@ div.pac-item:hover {
     background: #00ccff;
 }
 .menu {
-    margin-left: 14%;
+    width: 720px;
+    margin: 0 auto;
 }
 .menu .nav {
     margin-bottom: 0;
@@ -746,6 +766,9 @@ div.pac-item:hover {
    background: radial-gradient(#f70404,#464242);
 }
 /****** payments Page ****/
+.paymentsContainer {
+    margin-top: 50px;
+}
 .paymentsContainer h4 {
     font-size: 27px;
     font-weight: 600;
@@ -754,6 +777,10 @@ div.pac-item:hover {
 .paymentsContainer p
 {
     font-size: 20px;
+}
+.payments-body {
+    width: 720px;
+    margin: 0 auto;
 }
 .related-article {
     padding-top: 30px;
@@ -794,7 +821,7 @@ div.pac-item:hover {
    outline: 0 !important;
 }
 /***** DASHBOARD STYLES *****/
-.dashboard ul.dropdown-menu {    
+/*.dashboard ul.dropdown-menu {    
     margin-top: 10px;
     right: 4px;
     left: auto;
@@ -808,7 +835,8 @@ div.pac-item:hover {
     border-bottom: 9px solid #EEE;
     border-left: 9px solid transparent;
     content: '';
-}
+}*/
+
 .nav-tabs {
     border:0;
     border-bottom: 0px;
@@ -851,6 +879,11 @@ div.pac-item:hover {
     font-size: 30px;
     font-weight: bold;
 }
+.otherjobs-navbar .nav-tabs .nav-item .nav-link {
+    color: #00ccff;
+    font-size: 25px;
+    font-weight: 200px;
+}
 .menuBar {
     width: 550px;
     height: auto;
@@ -863,7 +896,7 @@ div.pac-item:hover {
 .invities button {
     width: 50px;
     height: 50px;
-    background: #565656;
+    background: transparent;
     border-radius: 50%;    
     border: 0;
     margin: 5px;
@@ -871,13 +904,18 @@ div.pac-item:hover {
 }
 .invities .fa {
     font-size: 30px;
-    color: white;
+    color: #00ccff;
+    background: transparent;
     text-align: center;
+    border: none;
+}
+.invities .row.marginFifty {
+    position: relative;
+    left: 30%;
 }
 .socialMedia {
-    border: 1px solid gray;
-    margin: 50px;    
-    width: 35%;
+    border: 1px solid #00ccff;
+    width: 65%;
     margin-left: auto;
     margin-right: 0;
     height: auto;
@@ -894,16 +932,48 @@ div.pac-item:hover {
     border:0;
 }
 .start .fa {
-    font-size: 20px; 
+    font-size: 20px;
+    color: white; 
     display: inline-block !important; 
 }
 .fa-plus {
     width: 30px;
     height: 30px;
-    background: #00ccff;
+    background: transparent;
     border-radius: 50%;    
     border: 0;
     margin: 5px;
+}
+.sendInvite {
+    border: 1px solid #00ccff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+}
+.invite {
+    margin: 10px auto;
+}
+.inviteBlock {
+    text-align: center;
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-size: 7px;
+    border: 1px solid #00ccff;
+}
+.inviteBlock::after {
+    top: 78%;
+    left: 8%;
+    margin-top: -5px;
+    position: absolute;
+    border-top-width: 7px;
+    border-right-width: 7px;
+    border-style: solid;
+    border: 9px 9px 0 0;
+    border-color: #00ccff transparent transparent transparent;    
+    content: '';
 }
 .invities .pull-right input[type=button],
 .invities .pull-right select,
@@ -916,6 +986,7 @@ div.pac-item:hover {
     background: transparent;
     border: 1px solid grey;
     border-radius: 5px;
+    margin-right: 10px;
     padding: 0;
     box-shadow: none;
 }
@@ -940,7 +1011,7 @@ div.pac-item:hover {
     border-top: none;
 }
 .verticalLine {
-    border-right: 2px solid #dedcdc;
+    border-right: 2px solid #00ccff;
 }
 a.dropdown-item, .dropdown-header {
     text-decoration: none;
@@ -959,8 +1030,42 @@ a.dropdown-item, .dropdown-header {
 .tableContent {
     margin-top: 30px;
 }
+.dispute-menubar .nav-tabs {
+    width: 500px;
+    margin: 0 auto;
+}
 .dispute-menubar .nav-tabs .nav-item .nav-link {
-    font-size: 20px;
+    font-size: 25px;
     color: #00ccff;
     margin-right: 30px;
+}
+/**** My Disputes styling *****/
+.dispute-menubar > .nav > li > a:focus,
+ .dispute-menubar > .nav > li > a:active {
+    color: white;
+    background: url(../images/line.png) no-repeat center;
+    display: inline-block;
+    height: 100px;
+    background-size: 50px 10px; 
+}
+td span {
+    padding-left: 20px;
+}
+.edit, .checkMark {
+    color: #00ccff;
+}
+.edit:focus, .edit:active {
+    outline: none;
+    border:none;
+}
+.tab-pane .pull-right input[type=button]:focus,
+.tab-pane .pull-right input[type=button]:hover,
+.tab-pane .pull-right input[type=button]:active,
+.tab-pane .pull-right select:focus,
+.tab-pane .pull-right select:hover,
+.tab-pane .pull-right select:active {
+    border: 1px solid #00ccff;
+    border-radius: 5px;
+    color: #00ccff;
+    outline: none;
 }

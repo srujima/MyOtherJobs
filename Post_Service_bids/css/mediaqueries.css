@@ -78,11 +78,6 @@
     width: 40px;
     height: 40px;
   }
-
-  .menu {
-    margin-left: 0;
-  }
-
   .menu .nav {
     height: 25px;
   }
@@ -518,10 +513,6 @@
       width: 40px;
       height: 40px;
   }
-  .menu {
-    margin-left: 0%;
-  }
-
   .menu > .nav > li > a {
     font-size: 14px;
     padding: 2px;
@@ -649,9 +640,6 @@
     top: 20px;
   }
 
-  .menu {
-    margin-left: 0%;
-  }
   .menu .nav {
     height: 25px;
   }
@@ -961,10 +949,6 @@
     top: 35px;
     margin-right: 20%;
   }
-
-  .menu {
-    margin-left: 5%;
-  }
   
   .menu > .nav > li > a {
     font-size: 18px;
@@ -1032,7 +1016,7 @@
   .container .pull-left {
     font-size: 30px;
   }
-
+  
   .searchQuestion {
     top: 35px;
     margin-right: 20%;
@@ -1059,7 +1043,7 @@
     width: 150px;
     height: 70px;
   }
-
+   
   .icon {
     margin-top: 10px;
     margin-left: 5px;

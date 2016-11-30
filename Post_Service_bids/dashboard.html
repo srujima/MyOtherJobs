@@ -4,7 +4,8 @@
 <head>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap-submenu.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300"
         rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/chosen.min.css">
@@ -30,22 +31,34 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#"><img src="images/search.png" class="image" width="15px" height="20px"><p>Search</p></a>
+                                <a href="#"><img src="images/search.png" class="image" width="15px" height="20px">
+                                    <p>Search</p>
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/getmore.png" class="image" width="15px" height="20px"> <p>Get More</p></a>
+                                <a href="#"><img src="images/getmore.png" class="image" width="15px" height="20px">
+                                    <p>Get More</p>
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/message.png" class="image" width="20px" height="16px"> <p>Messages</p></a>
+                                <a href="#"><img src="images/message.png" class="image" width="20px" height="16px">
+                                    <p>Messages</p>
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/help.png" class="image" width="20px" height="20px"><p>Help</p></a>
+                                <a href="#"><img src="images/help.png" class="image" width="20px" height="20px">
+                                    <p>Help</p>
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/notifications.png" class="image" width="15px" height="20px"><p>Notifications</p></a>
+                                <a href="#"><img src="images/notifications.png" class="image" width="15px" height="20px">
+                                    <p>Notifications</p>
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/profile.png" class="image" width="20px" height="20px"><p>Profile</p></a>
+                                <a href="#"><img src="images/profile.png" class="image" width="20px" height="20px">
+                                    <p>Profile</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -66,100 +79,63 @@
                     <a class="nav-link" data-toggle="tab" href="#" role="tab">Services</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">MyOtherJobs</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dashboard</a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown-header mainHeader"><span>My BIDS</span>
-                            <ul>
-                                <li class="dropdown-header">My Job BIDS
-                                    <ul>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Open JOB BIDS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">My Posted Active BIDS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Past JOBS BIDS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB BIDS Awarded</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB BIDS Milestones</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB BIDS Completed</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-header">My Services BIDS
-                                    <ul>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Open JOB BIDS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">My Posted Active BIDS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Past JOBS BIDS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB BIDS Awarded</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB BIDS Milestones</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB BIDS Completed</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-header mainHeader"><span>My JOBS</span>
-                            <ul>
-                                <li>
-                                    <ul>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Open JOBS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB in Progress</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Past JOB</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOB Awarded</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOBS Milestones</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">JOBS Completed</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-header mainHeader"><span>My Service</span>
-                            <ul>
-                                <li>
-                                    <ul>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Open Service</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Service in Progress</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Past Service</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Service Awarded</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Service Milestones</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Service Completed</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-header mainHeader"><span>My Favorites</span>
-                            <ul>
-                                <li class="dropdown-header">Saved
-                                    <ul>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">BIDS</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Jobs</a></li>
-                                        <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Freelancers</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-header mainHeader"><span>Community and Forums</span>
-                            <ul>
-                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Blog</a></li>
-                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Form</a></li>
-                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Podcast</a></li>
-                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Academy</a></li>
-                            </ul>
-                        </li>
-                        <li class="mainHeader"><a class="dropdown-item" data-toggle="tab" href="#invities" role="tab"><span>My Invities</span></a></li>
-                        <li class="dropdown-header mainHeader">
-                            <a class="dropdown-item" data-toggle="tab" href="#disputes" role="tab"><span>My Disputes</span></a>
-                            <ul>
-                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Disputes Requested</a></li>
-                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">Manage Disputes</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                        <li><a class="dropdown-item" data-toggle="tab" href="#otherjobs" role="tab">MyOtherJobs</a></li>
+                    </ul>                   
                 </li>
             </ul>
         </div>
     </div>
     <div class="tab-content">
-         <div class="tab-pane active" id="dashBoard" role="tabpanel">
+        <div class="tab-pane active" id="dashBoard" role="tabpanel">
             <header>
                 <div class="heading">
                     <span>Dashboard</span>
                 </div>
             </header>
-    </div>
+        </div>
+        <div class="tab-pane" id="otherjobs" role="tabpanel">
+            <header>
+                <div class="heading">
+                    <span>MyOtherJobs</span>
+                </div>
+            </header>
+            <div class="navbar otherjobs-navbar">
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My BIDS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">My Job BIDS</a></li>
+                                <li><a class="dropdown-item" data-toggle="tab" href="#" role="tab">My Service BIDS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#" role="tab">My JOBS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#" role="tab">My Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Favorites</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" data-toggle="tab" href="" role="tab">Saved</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#" role="tab">Community and Forums</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#invities" role="tab">My Invites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#" role="tab">My Disputes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="tab-pane invities" id="invities" role="tabpanel">
             <header>
                 <div class="heading">
@@ -168,29 +144,39 @@
             </header>
             <div class="container">
                 <div class="container-fluid">
-                    <div class="socialMedia">
-                        <div class="start">
-                            <input type="button" class="fa powerbtn" value="&#xf011" />
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                                <button><i class="fa fa-camera-retro" aria-hidden="true"></i></button>
-                                <button><i class="fa fa-pinterest-p" aria-hidden="true"></i></button>
-                                <button><i class="fa fa-facebook-f" aria-hidden="true"></i></button>
-                                <input type="button" class="fa fa-plus" value="&#xf067" style="font-size:20px;" />
+                    <div class="row marginFifty">
+                        <div class="col-md-6">
+                            <div class="socialMedia">
+                                <div class="start">
+                                    <input type="button" class="fa powerbtn" value="&#xf011" />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-camera-retro" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-pinterest-p" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-facebook-f" aria-hidden="true"></i></button>
+                                        <input type="button" class="fa fa-plus" value="&#xf067" style="font-size:20px;" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!--<div class="invite">
-                            <div>
-                                <input type="button" class="fa" value="&#xf067" />
-                                <a href="">Invite Others</a>
+                        <div class="col-md-6">
+                            <div class="invite">
+                                <div class="sendInvite">
+                                    <div class="inviteBlock">
+                                        <input type="button" class="fa" value="+" style="font-size:30px;" />
+                                        <a href="">Invite Others</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>-->
+                        </div>
                     </div>
+                </div>
+                <div class="marginFifty">
                     <div class="pull-right">
-                        <input type="button" class="" value="SEARCH" />
-                        <select class="">
+                        <input type="button" class="search" value="SEARCH" />
+                        <select class="sort">
                             <option value="">Sort By</option>
                             <option value="date">Date</option>
                             <option value="relevance">Relevance</option>
@@ -250,17 +236,17 @@
                         <a class="nav-link" data-toggle="tab" role="tab" href="#request">Request</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#">Manage</a>
+                        <a class="nav-link" data-toggle="tab" href="#manageDisputes">Manage</a>
                     </li>
                 </ul>
             </div>
-            <div class="tab-content">
+            <div class="tab-content marginFifty">
                 <div class="tab-pane request" id="request" role="tabpanel">
                     <div class="container">
                         <div class="container-fluid">
                             <div class="pull-right">
-                                <input type="button" class="" value="SEARCH" />
-                                <select class="">
+                                <input type="button" class="search" value="SEARCH" />
+                                <select class="sort">
                                     <option value="">Sort By</option>
                                     <option value="date">Date</option>
                                     <option value="relevance">Relevance</option>
@@ -297,7 +283,71 @@
                                             <td class="verticalLine">September 12</td>
                                             <td class="verticalLine">Politeness</td>
                                             <td>In Que</td>
-                                        </tr>                                        
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane manageDisputes" id="manageDisputes" role="tabpanel">
+                    <div class="container">
+                        <div class="container-fluid">
+                            <div class="pull-right">
+                                <input type="button" class="search" value="SEARCH" />
+                                <select class="sort">
+                                    <option value="">Sort By</option>
+                                    <option value="date">Date</option>
+                                    <option value="relevance">Relevance</option>
+                                </select>
+                            </div>
+                            <div class="subHeading">
+                                <h2>Manage Disputes</h2>
+                            </div>
+                            <div class="tableContent">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Sent</th>
+                                            <th>Dispute</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="verticalLine">John Snow</td>
+                                            <td class="verticalLine">September 12</td>
+                                            <td class="verticalLine">Payment
+                                                <span>
+                                                <input type="button" class="fa edit" value="&#xf040" />
+                                                <input type="button" class="fa checkMark" value="&#xf05D" />
+                                            </span>
+                                            </td>
+                                            <td>Under Review</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="verticalLine">John Snow</td>
+                                            <td class="verticalLine">September 12</td>
+                                            <td class="verticalLine">Payment
+                                                <span>
+                                                <input type="button" class="fa edit" value="&#xf040" />
+                                                <input type="button" class="fa checkMark" value="&#xf05D" />
+                                            </span>
+                                            </td>
+                                            <td>Under Review</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="verticalLine">John Snow</td>
+                                            <td class="verticalLine">September 12</td>
+                                            <td class="verticalLine">Politeness
+                                                <span>
+                                                <input type="button" class="fa edit" value="&#xf040" />
+                                                <input type="button" class="fa checkMark" value="&#xf05D" />
+                                            </span>
+                                            </td>
+                                            <td>In Que</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -307,12 +357,13 @@
             </div>
         </div>
     </div>
-    
+
     <!--Links to JavaScript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/jquery/jquery-3.1.1.js"></script>
     <script src="js/jquery/chosen.jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap-submenu.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
