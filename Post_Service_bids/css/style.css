@@ -24,6 +24,9 @@ li:focus,li:hover,li:active {
 }
 .marginFifty {
     margin-top: 50px;
+}
+.marginThirty {
+    margin-top: 30px;
 } 
 ul, li {
     list-style: none;
@@ -31,14 +34,26 @@ ul, li {
 a:focus, a:hover, a:active {
     text-decoration: none;
 }
-button, input[type="button"] {
+button {
     background: transparent;
     border: none;
 }
-button:hover, input[type="button"]:hover,
-button:active, input[type="button"]:active {
-    outline: none;
-    border: none;
+button:hover,
+button:active {
+    outline: none !important;
+    border: none !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #00ccff;
+}
+.navbar-default .navbar-toggle {
+   border: none;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    border-radius: 1px;
 }
 .menuItem:hover::after {
     content: '';
@@ -49,6 +64,10 @@ button:active, input[type="button"]:active {
     bottom: -10px;
     border-bottom: 2px solid white;
 } 
+#myNavbar .navbar-nav li,
+#myNavbar ul.nav.navbar-nav.navbar-right {
+    padding: 15px;
+}
 .menuBar > .navbar-nav > li > a {
     color: #f6f3f3;
     font-weight: bold;
@@ -58,6 +77,28 @@ button:active, input[type="button"]:active {
 #myNavbar .navbar-nav li a img:hover {
     background: transparent;
     color: #FE6E00;
+}
+ .menu-tooltip {
+    visibility: hidden;
+    width: 120px;
+    color: #00ccff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    margin-left: -60px;
+
+}
+.search:hover .menu-tooltip,
+.getmore:hover .menu-tooltip,
+.message:hover .menu-tooltip,
+.help:hover .menu-tooltip,
+.notification:hover .menu-tooltip,
+.profile:hover .menu-tooltip {
+    visibility: visible;
 }
 .navbar-default .navbar-nav li a:focus {
     background: transparent;
@@ -84,18 +125,21 @@ button:active, input[type="button"]:active {
     background-color: #ffffff;
     border: 0;
 }
-/*.navbar-brand {
-    padding: 0px;
-    height: auto;
-}*/
 .navbar-collapse {
     overflow-x: hidden;
     border: 0px;
 }
-.navbar-brand img {
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 15px 15px 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+/*.navbar-brand img {
     width: 70%;
     height: auto;
-}
+}*/
 .services {
     color: white;
 }
@@ -336,8 +380,11 @@ textarea::-webkit-scrollbar-thumb {
     padding-bottom: 12px;
 }
 #langOptions_chosen[style] {
-    width: 200px;
+    width: 250px !important;
     padding: 0;
+}
+.chosen-container-multi {
+    width: 250px;
 }
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
     position: absolute;
@@ -459,7 +506,7 @@ textarea:focus, select:focus,
     border: 1px solid #00ccff;
     box-shadow: 0 0 5px rgba(0,204,255,.3)
 }
-#checkBox:focus, #checkBox:active {
+.checkBox:focus, .checkBox:active {
        outline: none !important;
        text-decoration: none;
        box-shadow: none;
@@ -648,10 +695,9 @@ div.pac-item:hover {
   input[type=button]:active {
      background: transparent;
      border: none;
-     outline-style: 0 !important;
+     outline: none !important;
      color: #66FF00;
- }
- 
+ } 
  
 .shapeOne {
     border-bottom: 160px solid #8F2793;
@@ -821,22 +867,40 @@ div.pac-item:hover {
    outline: 0 !important;
 }
 /***** DASHBOARD STYLES *****/
-/*.dashboard ul.dropdown-menu {    
-    margin-top: 10px;
+.menuBar ul.dropdown-menu {  
     right: 4px;
+    border-radius: 5px;
     left: auto;
 }
-.dashboard ul ul:before {
+.otherjobs-navbar ul.dropdown-menu {
+    border: 1px solid #00ccff;
+    right: 4px;
+    border-radius: 5px;
+    left: auto;
+}
+.menuBar ul ul:before {
     position: absolute;
     top: -9px;
-    left: 185px;
+    left: 85px;
     display: inline-block;
     border-right: 9px solid transparent;
-    border-bottom: 9px solid #EEE;
+    border-bottom: 9px solid white;
     border-left: 9px solid transparent;
     content: '';
-}*/
-
+}
+.otherjobs-navbar ul ul:before {
+    position: absolute;
+    top: -9px;
+    left: 85px;
+    display: inline-block;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #00ccff;
+    border-left: 9px solid transparent;
+    content: '';
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 .nav-tabs {
     border:0;
     border-bottom: 0px;
@@ -873,15 +937,14 @@ div.pac-item:hover {
 }
 .heading {
     padding: 10px;
-    margin-left: 30px;
 }
  .heading span {  
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 600;
 }
 .otherjobs-navbar .nav-tabs .nav-item .nav-link {
     color: #00ccff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200px;
 }
 .menuBar {
@@ -913,7 +976,7 @@ div.pac-item:hover {
     position: relative;
     left: 30%;
 }
-.socialMedia {
+.social-media-div {
     border: 1px solid #00ccff;
     width: 65%;
     margin-left: auto;
@@ -926,9 +989,11 @@ div.pac-item:hover {
     font-size: 10px;
     text-align: right;
 }
-.powerbtn {
+button.powerbtn {
     background:none !important;
     outline:none !important;
+    width: auto;
+    height: auto;
     border:0;
 }
 .start .fa {
@@ -945,40 +1010,70 @@ div.pac-item:hover {
     margin: 5px;
 }
 .sendInvite {
-    border: 1px solid #00ccff;
-    width: 70px;
-    height: 70px;
+    border: 3px solid #00ccff;
+    background: #00ccff;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     text-align: center;
 }
-.invite {
+/*.invite {
     margin: 10px auto;
-}
-.inviteBlock {
-    text-align: center;
-    width: 50px;
+}*/
+.bubble{
+	text-align: center;
+    width: 65px;
     height: 45px;
+    color: #00ccff;
+    background: white;
     border-radius: 10px;
-    margin: 10px auto;
-    font-size: 7px;
-    border: 1px solid #00ccff;
+    margin: 20px auto;
+    font-size: 8.5px;
+    font-weight: 600;
+    position: relative;
+    border: 2px solid #00ccff;
 }
-.inviteBlock::after {
-    top: 78%;
-    left: 8%;
-    margin-top: -5px;
+
+.bubble::after {
+    background-color: transparent;    
+    height: 7px;
+    width: 10px;
     position: absolute;
-    border-top-width: 7px;
-    border-right-width: 7px;
-    border-style: solid;
-    border: 9px 9px 0 0;
-    border-color: #00ccff transparent transparent transparent;    
+    bottom: -4px;
+    left: 10px;
+    transform: rotate(80deg) skew(46deg);
+    -moz-transform: rotate(80deg) skew(46deg);
+    -ms-transform: rotate(80deg) skew(46deg);
+    -o-transform: rotate(80deg) skew(46deg);
+    -webkit-transform: rotate(80deg) skew(46deg);
+    display: inline-block;
+    border-bottom: 9px solid white;
+    border-left: 9px solid transparent;
     content: '';
 }
-.invities .pull-right input[type=button],
-.invities .pull-right select,
-.disputes .pull-right input[type=button],
-.disputes .pull-right select {
+.bubble a {
+    color: #00ccff;
+}
+.addinvite {
+    font-size: 35px;
+    width: auto;
+    height: 30px;
+    font-weight: 600;
+}
+button.media-icon:hover,
+button.media-icon:focus,
+button.media-icon:active {
+    border: none;
+    outline: none;
+    color: #FE6E00;
+}
+.media-icon i.fa:hover,
+.media-icon i.fa:focus,
+.media-icon i.fa:active {    
+    color: #FE6E00;
+}
+.tab-pane .pull-right input[type=button],
+.tab-pane .pull-right select {
     width: 90px;
     height: 25px;
     font-size: 13px;
@@ -1010,6 +1105,11 @@ div.pac-item:hover {
     text-align: center;
     border-top: none;
 }
+thead>tr>th {
+    color: #505050;
+}
+
+
 .verticalLine {
     border-right: 2px solid #00ccff;
 }
@@ -1027,36 +1127,57 @@ a.dropdown-item, .dropdown-header {
     color: #00ccff;
     font-weight: bold;
 }
-.tableContent {
-    margin-top: 30px;
-}
-.dispute-menubar .nav-tabs {
+.tabpane-menubar .nav-tabs {
     width: 500px;
     margin: 0 auto;
 }
-.dispute-menubar .nav-tabs .nav-item .nav-link {
-    font-size: 25px;
+.tabpane-menubar .nav-tabs .nav-item .nav-link {
+    font-size: 20px;
     color: #00ccff;
     margin-right: 30px;
 }
 /**** My Disputes styling *****/
-.dispute-menubar > .nav > li > a:focus,
- .dispute-menubar > .nav > li > a:active {
-    color: white;
+.tabpane-menubar > .nav > li > a:focus,
+ .tabpane-menubar > .nav > li > a:active,
+ .tabpane-menubar > .nav > li > a:visited {    
     background: url(../images/line.png) no-repeat center;
     display: inline-block;
-    height: 100px;
+    height: 85px;
+    color: #FF6F00;
     background-size: 50px 10px; 
 }
 td span {
     padding-left: 20px;
 }
 .edit, .checkMark {
+     position: relative;
+    display: inline-block;
     color: #00ccff;
 }
-.edit:focus, .edit:active {
+.edit:hover, .edit:focus, .edit:active,
+.checkMark:hover, .checkMark:focus, .checkMark:active {
     outline: none;
     border:none;
+    color: #FE6E00;
+}
+ .edit .text-tooltip,
+ .checkMark .text-tooltip {
+    visibility: hidden;
+    width: 120px;
+    color: #00ccff;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 70%;
+    margin-left: -60px;
+}
+.edit:hover .text-tooltip,
+.checkMark:hover .text-tooltip  {
+    visibility: visible;
 }
 .tab-pane .pull-right input[type=button]:focus,
 .tab-pane .pull-right input[type=button]:hover,
@@ -1068,4 +1189,194 @@ td span {
     border-radius: 5px;
     color: #00ccff;
     outline: none;
+}
+
+/****** MY FAVORITES STYLES *****/
+#container {
+	text-align: justify;
+	}
+#container > div {
+	width: 250px;
+    height: auto;
+    border-radius: 10px;
+	display: inline-block;
+	vertical-align: top;
+    border: 1px black solid;
+    margin-bottom: 15px;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+	}
+#container:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+    }
+    /**** MY DISPUTES CREATE SUBMENU STYLES ****/
+
+.create .col-md-3 .form-group {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20px; 
+} 
+.create input[type=text], .create select {
+    width: 180px;
+    height: 35px;
+    background: #fbfbfb;
+    text-align-last: center;
+    padding: 0;
+}
+.create .labels {
+    padding-bottom: 20px;
+}
+.create textarea {
+    max-width: 500px;
+    height: 265px;
+    padding: 20px;
+    resize: none;
+    border-radius: 20px;
+    border: 1px solid #00ccff;
+}
+.create form#upload {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+.details-group {
+    width: auto;
+    height: 355px;
+}
+/******* JOBS STYLES *****/
+.jobs header {
+    width: 100%;
+    height: auto;
+    background: #FE6E00;
+    color: rgb(255, 255, 255);
+}
+.jobs .tabpane-menubar .nav-tabs .nav-item .nav-link {
+    font-size: 20px;
+    color: #FE6E00;
+    margin-right: 30px;
+}
+.jobs .tabpane-menubar .nav-tabs {
+    width: 90%;
+    margin: 0 auto;
+}
+.jobproposal-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.fa-info {
+    background: #00ccff;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+}
+.job-details-div, .job-proposal-div {
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 5px #cccccc;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 10px;
+    min-width: 400px;
+    min-height: 250px;
+    height: auto;
+}
+.div-header {
+    background: #cccccc;
+    color: #424242;   
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 12px 12px 0px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.job-description, .proposal-description, .milestone-description {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 15px;
+    border: none !important;
+    outline: none !important;
+}
+[contentEditable=true]:not(:focus):before {
+        content:attr(data-placeholder)
+}
+.milestone-header {
+    background: #FE6E00;
+    color: white;
+    font-weight: 600;
+    padding: 7px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.milestone {
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 5px #cccccc;
+    border-radius: 10px;
+    min-height: 50px;
+    height: auto;
+}
+.milestone input[type="text"] {
+    width: 50px;
+    height: 20px;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+}
+[contentEditable=true]:not(:focus):before {
+        content:attr(data-text)
+}
+.add-milestone .fa-plus {
+    background: #fe6e00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    padding: 3px;
+    color: white;
+}
+#submit-proposal {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FE6E00;
+    color: white;
+}
+.milestone-submit {
+    text-align: center;
+}
+.proposal-popup {
+    border: 1px solid #cccccc;
+}
+.proposal-popup .div-header {
+    background: #FE6E00;
+    color: white;
+    padding: 3px;
+    text-align: right;
+    border-radius: 0;
+}
+.job-proposal-div .fa-info .proposal-popup {
+    visibility: hidden;
+    width: 150px;
+    min-height: 50px;
+    background: white;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 95%;
+}
+.job-proposal-div .fa-info:hover .proposal-popup {
+    visibility: visible;
 }
